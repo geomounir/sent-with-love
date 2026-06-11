@@ -125,7 +125,7 @@ export function Invitation() {
           >
             <Ornament />
             <p className="font-serif text-cream/90 text-lg">{wedding.dateDisplay}</p>
-            <p className="text-cream/60 tracking-[0.25em] uppercase text-xs mt-2">{wedding.venue} · {wedding.city}</p>
+            <p className="text-cream/60 tracking-[0.25em] uppercase text-xs mt-2">{[wedding.venue, wedding.city].filter(Boolean).join(" · ")}</p>
           </motion.div>
         </div>
       </section>
