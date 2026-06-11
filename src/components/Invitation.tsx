@@ -168,7 +168,7 @@ export function Invitation() {
       <Section className="max-w-4xl mx-auto text-center">
         <p className="text-gold tracking-[0.3em] uppercase text-xs mb-3">Join Us</p>
         <h2 className="font-display text-4xl text-gold mb-10">Events</h2>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className={`grid gap-6 ${wedding.events.length > 1 ? "md:grid-cols-2" : "max-w-md mx-auto"}`}>
           {wedding.events.map((e) => (
             <div key={e.title} className="border border-gold/30 rounded-md p-8 bg-card/40 backdrop-blur-sm">
               <h3 className="font-display text-2xl text-gold mb-4">{e.title}</h3>
@@ -176,7 +176,18 @@ export function Invitation() {
               <p className="font-serif text-cream/70 text-sm mb-4">{e.time}</p>
               <div className="ornamental-divider my-4"><span className="font-arabic text-gold">۞</span></div>
               <p className="font-serif text-cream/90">{e.venue}</p>
-              <p className="text-cream/60 text-sm">{e.address}</p>
+              {e.mapsUrl ? (
+                <a
+                  href={e.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 text-gold/90 hover:text-gold underline underline-offset-4 text-sm tracking-wider"
+                >
+                  {e.address}
+                </a>
+              ) : (
+                <p className="text-cream/60 text-sm">{e.address}</p>
+              )}
             </div>
           ))}
         </div>
