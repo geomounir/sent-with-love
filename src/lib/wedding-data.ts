@@ -1,0 +1,38 @@
+export const wedding = {
+  bride: "Aisha",
+  groom: "Yusuf",
+  brideFull: "Aisha Rahman",
+  groomFull: "Yusuf Ibrahim",
+  date: "2026-09-12T17:00:00",
+  dateDisplay: "12 September 2026",
+  venue: "Al-Hambra Gardens",
+  city: "Istanbul, Türkiye",
+  bismillah: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+  ayah:
+    "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً",
+  ayahTranslation:
+    "And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. — Ar-Rum 30:21",
+  welcome:
+    "With hearts full of gratitude to Allah ﷻ, we invite you to share in the joy of our blessed union.",
+  story:
+    "Two souls, written in the same breath of destiny, meeting under the gentle gaze of the One who decrees all things. Our journey began with a quiet du'a and is now answered with a lifetime of togetherness, insha'Allah.",
+  events: [
+    {
+      title: "Akad Nikah",
+      date: "Friday, 11 September 2026",
+      time: "10:00 AM",
+      venue: "Sultan Ahmed Mosque",
+      address: "Sultanahmet, Fatih, Istanbul",
+    },
+    {
+      title: "Walima Reception",
+      date: "Saturday, 12 September 2026",
+      time: "5:00 PM",
+      venue: "Al-Hambra Gardens",
+      address: "Beşiktaş Boulevard, Istanbul",
+    },
+  ],
+  dua: "بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
+  duaTranslation:
+    "May Allah bless you, and shower His blessings upon you, and join you together in goodness.",
+};
