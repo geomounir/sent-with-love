@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, lazy, Suspense } from "react";
 import { Invitation } from "@/components/Invitation";
 
-const Envelope3D = lazy(() =>
-  import("@/components/Envelope3D").then((m) => ({ default: m.Envelope3D })),
+const Envelope2D = lazy(() =>
+  import("@/components/Envelope2D").then((m) => ({ default: m.Envelope2D })),
 );
 
 export const Route = createFileRoute("/")({
