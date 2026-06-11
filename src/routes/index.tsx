@@ -1,29 +1,43 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState, lazy, Suspense } from "react";
+import { Invitation } from "@/components/Invitation";
+
+const Envelope3D = lazy(() =>
+  import("@/components/Envelope3D").then((m) => ({ default: m.Envelope3D })),
+);
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Aisha & Yusuf — A Blessed Union" },
+      { name: "description", content: "You are warmly invited to the wedding of Aisha & Yusuf. Press the wax seal to open your invitation." },
+      { property: "og:title", content: "Aisha & Yusuf — A Blessed Union" },
+      { property: "og:description", content: "Press the wax seal to open your invitation." },
     ],
   }),
   component: Index,
+  ssr: false,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const [opened, setOpened] = useState(false);
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      {!opened && (
+        <Suspense
+          fallback={
+            <div className="w-full h-screen flex items-center justify-center bg-emerald-deep">
+              <p className="text-gold font-display tracking-[0.3em] uppercase text-sm animate-shimmer">
+                Preparing your invitation…
+              </p>
+            </div>
+          }
+        >
+          <Envelope3D onOpened={() => setOpened(true)} />
+        </Suspense>
+      )}
+      {opened && <Invitation />}
+    </>
   );
 }
