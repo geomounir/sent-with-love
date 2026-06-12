@@ -208,11 +208,8 @@ export function IslamicIntro({ onOpened }: { onOpened: () => void }) {
             onClick={handleOpen}
             className="group relative px-8 py-3 rounded-sm overflow-hidden border border-gold/60 text-gold font-display tracking-[0.3em] uppercase text-xs hover:text-emerald-darker transition-colors"
           >
-            <span
-              className="absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"
-              style={{ background: "var(--gradient-gold)" }}
-            />
-            <span className="relative">Enter Invitation</span>
+            
+            <span className="relative">Open Invitation</span>
           </button>
 
           <p className="font-serif italic text-cream/50 text-xs mt-4">
