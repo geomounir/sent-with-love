@@ -20,7 +20,7 @@ export const wedding = {
     "Two souls, written in the same breath of destiny, meeting under the gentle gaze of the One who decrees all things. Our journey began with a quiet du'a and is now answered with a lifetime of togetherness, insha'Allah.",
   events: [
     {
-      title: "Walima Reception",
+      title: "Our Celebration",
       date: "Friday, 10 July 2026",
       time: "7:00 PM",
       venue: "L'amour — Rayal Hall",
