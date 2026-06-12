@@ -206,19 +206,20 @@ export function IslamicIntro({ onOpened }: { onOpened: () => void }) {
 
           <button
   onClick={handleOpen}
-  className="group relative px-8 py-3 rounded-sm overflow-hidden border border-gold/60 text-gold font-display tracking-[0.3em] uppercase text-xs hover:text-emerald-darker transition-colors duration-300"
+  className="group relative px-8 py-3 rounded-sm overflow-hidden border border-gold/60 font-display tracking-[0.3em] uppercase text-xs transition-colors duration-300"
 >
-  {/* Background span */}
+  {/* The sliding gold background */}
   <span
-    className="absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 bg-gold"
-    // If var(--gradient-gold) isn't resolving, this bg-gold acts as a fallback
+    className="absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"
+    style={{ background: "var(--gradient-gold, gold)" }} // Added fallback 'gold'
   />
   
-  {/* Text span: Explicitly ensure high contrast/visibility */}
-  <span className="relative z-10 font-bold group-hover:text-emerald-darker">
+  {/* The Text Layer */}
+  <span className="relative z-10 text-gold group-hover:text-emerald-darker transition-colors duration-300">
     Open Invitation
   </span>
 </button>
+
 
 
           <p className="font-serif italic text-cream/50 text-xs mt-4">
