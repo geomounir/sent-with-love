@@ -193,34 +193,6 @@ export function Invitation() {
         </div>
       </Section>
 
-      {/* RSVP */}
-      <Section className="max-w-xl mx-auto text-center">
-        <p className="text-gold tracking-[0.3em] uppercase text-xs mb-3">Your Presence</p>
-        <h2 className="font-display text-4xl text-gold mb-8">Kindly RSVP</h2>
-        {rsvp ? (
-          <p className="font-serif italic text-cream/90 text-lg border border-gold/30 rounded-md p-8 bg-card/40">
-            {rsvp === "yes"
-              ? "Jazak Allah khair — your response has been received. We cannot wait to share this blessed day with you."
-              : "Thank you for letting us know. You will be in our du'as."}
-          </p>
-        ) : (
-          <div className="flex gap-4 justify-center">
-            <button
-              onClick={() => setRsvp("yes")}
-              className="px-8 py-3 bg-[image:var(--gradient-gold)] text-emerald-darker font-display tracking-[0.2em] uppercase text-sm rounded-sm shadow-[var(--shadow-gold)] hover:scale-[1.03] transition-transform"
-            >
-              Joyfully Accept
-            </button>
-            <button
-              onClick={() => setRsvp("no")}
-              className="px-8 py-3 border border-gold/50 text-gold font-display tracking-[0.2em] uppercase text-sm rounded-sm hover:bg-gold/10 transition-colors"
-            >
-              Regretfully Decline
-            </button>
-          </div>
-        )}
-      </Section>
-
       {/* Closing Dua */}
       <Section className="text-center max-w-3xl mx-auto">
         <h2 className="font-arabic text-3xl sm:text-4xl text-gold leading-loose">{wedding.dua}</h2>
