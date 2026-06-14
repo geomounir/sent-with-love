@@ -37,7 +37,7 @@ jobs:
         with:
           # Lovable usually outputs the build to 'dist'. 
           # If it fails, we may need to change this to '.output/public'
-          path: '.output/public' 
+          path: 'dist' 
 
   deploy:
     environment:
