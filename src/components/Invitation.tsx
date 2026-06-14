@@ -203,7 +203,7 @@ export function Invitation() {
       </Section>
 
       <footer className="text-center py-10 text-cream/40 text-xs tracking-[0.25em] uppercase">
-        Made with love · Bi'idhnillah
+        Made with love
       </footer>
     </motion.main>
   );
