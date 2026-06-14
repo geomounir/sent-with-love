@@ -223,7 +223,7 @@ export function IslamicIntro({ onOpened }: { onOpened: () => void }) {
 
 
           <p className="font-serif italic text-cream/50 text-xs mt-4">
-            Bi'idhnillah · {wedding.dateDisplay}
+            {wedding.dateDisplay}
           </p>
         </motion.div>
       </motion.div>
