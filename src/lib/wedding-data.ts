@@ -13,7 +13,7 @@ export const wedding = {
   ayah:
     "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً",
   ayahTranslation:
-    "And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. — Ar-Rum 30:21",
+    "",
   welcome:
     "With hearts full of gratitude to Allah ﷻ, we invite you to share in the joy of our blessed union.",
   story:
